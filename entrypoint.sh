@@ -3,4 +3,4 @@
 # Pull the model
 ollama pull llama3:latest
 
-exec ollama serve
+ollama serve
