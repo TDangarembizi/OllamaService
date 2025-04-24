@@ -1,6 +1,11 @@
 #!/bin/sh
 
-# Pull the model
-ollama pull llama3:latest
+ollama serve &
 
-ollama serve
+sleep 5
+
+# Pull the model
+ollama pull llama3:3.2
+
+wait
+
